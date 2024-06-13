@@ -13,7 +13,7 @@ export const Profile = () => {
           />
           <div className="mr-4">
             <h1 className="lg:text-7xl text-center lg:text-start text-4xl font-bold">
-              A Fresh Web Developer Produced in 082
+              Hi my name is Zo a Fresh Web Developer Produced in 082
             </h1>
             <p className="py-6">
               Hi you can call me Zo, im a Front and Back End Developer from
