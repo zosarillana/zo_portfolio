@@ -18,13 +18,13 @@ export const Langg = () => {
             Front end development.{" "}
           </p>
 
-          <div className="flex space-x-4 items-center">
+          <div className="flex space-x-4 h-auto items-center">
             <FrontEnd />
           </div>
           <p className="font-semibold content-center text-center mt-3">
             Back end development.{" "}
           </p>
-          <div className="flex space-x-4 ml-12 items-center">
+          <div className="flex space-x-4 h-auto ml-12 items-center">
             <BackEnd />
           </div>
         </div>
