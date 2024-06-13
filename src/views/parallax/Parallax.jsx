@@ -1,9 +1,11 @@
 import React from "react";
+import Works from "../blocks/Works";
 import About from "../blocks/About";
 import Footer from "../footer/Footer";
 import Profile from "../profile/Profile";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"; // Import Parallax components
 import Langg from "../blocks/Langg";
+import Services from "../blocks/Services";
 
 const ParallaxComponent = ({
   bottomImg,
@@ -13,7 +15,7 @@ const ParallaxComponent = ({
   boxLogo,
 }) => {
   return (
-    <Parallax pages={5} style={{ top: "0", left: "0" }} className="animation">
+    <Parallax pages={6} style={{ top: "0", left: "0" }} className="animation">
       <ParallaxLayer offset={0.015} speed={0.29}>
         <div className="animation_layer parallax" id="overall">
           <img
@@ -68,11 +70,16 @@ const ParallaxComponent = ({
       </ParallaxLayer>
       <ParallaxLayer offset={2.65} speed={0.25}>
         <div>
-          <Profile />
+          <Services />
+        </div>
+      </ParallaxLayer>
+      <ParallaxLayer offset={3.85} speed={0.15}>
+        <div>
+          <Works />
         </div>
       </ParallaxLayer>
       {/* Footer Layer */}
-      <ParallaxLayer offset={4} speed={0.5}>
+      <ParallaxLayer offset={5} speed={0.5}>
         <Footer />
       </ParallaxLayer>
     </Parallax>
