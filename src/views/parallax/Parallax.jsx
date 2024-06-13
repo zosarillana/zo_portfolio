@@ -13,7 +13,7 @@ const ParallaxComponent = ({
   boxLogo,
 }) => {
   return (
-    <Parallax pages={4} style={{ top: "0", left: "0" }} className="animation">
+    <Parallax pages={5} style={{ top: "0", left: "0" }} className="animation">
       <ParallaxLayer offset={0.015} speed={0.29}>
         <div className="animation_layer parallax" id="overall">
           <img
@@ -61,18 +61,18 @@ const ParallaxComponent = ({
           <About />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={1.45} speed={0.35}>
+      <ParallaxLayer offset={1.55} speed={0.35}>
         <div>
           <Langg />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={2.25} speed={0.25}>
+      <ParallaxLayer offset={2.65} speed={0.25}>
         <div>
           <Profile />
         </div>
       </ParallaxLayer>
       {/* Footer Layer */}
-      <ParallaxLayer offset={3.5} speed={0.5}>
+      <ParallaxLayer offset={4} speed={0.5}>
         <Footer />
       </ParallaxLayer>
     </Parallax>

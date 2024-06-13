@@ -4,7 +4,7 @@ export const backEnd = () => {
   return (
     <div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-4"
+        className="tooltip tooltip-primary tooltip-bottom m-5"
         data-tip="PHP">
         <a href="#" className="p-4 rounded">
           <svg
@@ -16,7 +16,7 @@ export const backEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom pr-3 pl-4 m-4"
+        className="tooltip tooltip-primary tooltip-bottom pr-3 pl-4 m-5"
         data-tip="Laravel">
         <a href="#" className="p-4 rounded">
           <svg
@@ -28,7 +28,7 @@ export const backEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-4"
+        className="tooltip tooltip-primary tooltip-bottom m-5"
         data-tip="MySQL">
         <a href="#" className="p-3 rounded">
           <svg
@@ -41,7 +41,7 @@ export const backEnd = () => {
       </div>
 
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-4"
+        className="tooltip tooltip-primary tooltip-bottom m54"
         data-tip="Microsoft SQL">
         <a href="#" className="p-3 rounded">
           <svg
@@ -79,7 +79,7 @@ export const backEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-4"
+        className="tooltip tooltip-primary tooltip-bottom m-5"
         data-tip="Python">
         {" "}
         <a href="#" className="rounded">
