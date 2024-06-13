@@ -5,14 +5,14 @@ export const Profile = () => {
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col text-justfiy lg:flex-row">
+        <div className="hero-content flex-col text-justify lg:flex-row-reverse">
           <img
             src={imgOne}
             alt="Profile"
             className="w-96 h-96 object-cover rounded-lg shadow-2xl"
           />
-          <div className="mr-4">
-            <h1 className="lg:text-7xl text-center lg:text-start text-4xl font-bold">
+          <div className="lg:mr-4 lg:text-left text-center">
+            <h1 className="lg:text-7xl text-4xl font-bold">
               Hi my name is Zo a Fresh Web Developer Produced in 082
             </h1>
             <p className="py-6">
@@ -26,10 +26,10 @@ export const Profile = () => {
               faucibus sed arcu eu aliquam. Donec vel libero id eros dapibus
               pretium.
             </p>
-            <div className="flex space-x-4 items-center">
-              <a href="#" className="p-2 rounded hover:bg-blue-500">
+            <div className="flex space-x-4 items-center justify-center lg:justify-start">
+              <a href="#" className="p-2 rounded hover:bg-blue-500 ">
                 <svg
-                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns="http://www.w3.org/2000/svg "
                   width="24"
                   height="24"
                   viewBox="0 0 24 24"
