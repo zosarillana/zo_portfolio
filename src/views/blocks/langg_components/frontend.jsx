@@ -4,7 +4,7 @@ export const frontEnd = () => {
   return (
     <div className="flex flex-wrap justify-center items-center">
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-5"
+        className="tooltip tooltip-primary tooltip-bottom "
         data-tip="React JS">
         <a href="#" className="p-4 rounded">
           <svg
@@ -25,7 +25,7 @@ export const frontEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-5"
+        className="tooltip tooltip-primary tooltip-bottom "
         data-tip="Tailwind CSS">
         <a href="#" className="p-4 rounded">
           <svg
@@ -49,7 +49,7 @@ export const frontEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-5"
+        className="tooltip tooltip-primary tooltip-bottom "
         data-tip="Bootstrap CSS">
         <a href="#" className="p-3 rounded">
           <svg
@@ -67,7 +67,7 @@ export const frontEnd = () => {
       </div>
 
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-5"
+        className="tooltip tooltip-primary tooltip-bottom "
         data-tip="Javascript">
         <a href="#" className="p-3 rounded">
           <svg
@@ -82,7 +82,7 @@ export const frontEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-5"
+        className="tooltip tooltip-primary tooltip-bottom "
         data-tip="HTML 5">
         <a href="#" className="p-1 rounded">
           <svg
@@ -100,9 +100,7 @@ export const frontEnd = () => {
           </svg>
         </a>
       </div>
-      <div
-        className="tooltip tooltip-primary tooltip-bottom m-2"
-        data-tip="CSS">
+      <div className="tooltip tooltip-primary tooltip-bottom " data-tip="CSS">
         <a href="#" className=" rounded">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +122,7 @@ export const frontEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-2"
+        className="tooltip tooltip-primary tooltip-bottom "
         data-tip="Photoshop">
         <a href="#" className=" rounded">
           <svg

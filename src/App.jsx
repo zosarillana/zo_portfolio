@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import "./App.css";
-import imgOne from "./assets/image_1.jpg";
 import bottomImg from "./assets/parallax/bottom-min.png";
 import middleImg from "./assets/parallax/middle-min.png";
 import topImg from "./assets/parallax/top-min.png";

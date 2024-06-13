@@ -3,9 +3,7 @@ import React from "react";
 export const backEnd = () => {
   return (
     <div className="flex flex-wrap justify-center items-center">
-      <div
-        className="tooltip tooltip-primary tooltip-bottom m-5"
-        data-tip="PHP">
+      <div className="tooltip tooltip-primary tooltip-bottom " data-tip="PHP">
         <a href="#" className="p-4 rounded">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +14,7 @@ export const backEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom pr-3 pl-4 m-5"
+        className="tooltip tooltip-primary tooltip-bottom pr-3 pl-4 "
         data-tip="Laravel">
         <a href="#" className="p-4 rounded">
           <svg
@@ -27,9 +25,7 @@ export const backEnd = () => {
           </svg>
         </a>
       </div>
-      <div
-        className="tooltip tooltip-primary tooltip-bottom m-5"
-        data-tip="MySQL">
+      <div className="tooltip tooltip-primary tooltip-bottom " data-tip="MySQL">
         <a href="#" className="p-3 rounded">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +56,7 @@ export const backEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom pr-3 pl-4 m-5"
+        className="tooltip tooltip-primary tooltip-bottom pr-3 pl-4 "
         data-tip="Firebase">
         <a href="#" className="p-4 rounded">
           <svg
@@ -84,7 +80,7 @@ export const backEnd = () => {
       </div>
 
       <div
-        className="tooltip tooltip-primary tooltip-bottom m54"
+        className="tooltip tooltip-primary tooltip-bottom "
         data-tip="Microsoft SQL">
         <a href="#" className="p-3 rounded">
           <svg
@@ -122,7 +118,7 @@ export const backEnd = () => {
         </a>
       </div>
       <div
-        className="tooltip tooltip-primary tooltip-bottom m-5"
+        className="tooltip tooltip-primary tooltip-bottom "
         data-tip="Python">
         <a href="#" className="rounded">
           <svg
