@@ -4,14 +4,14 @@ import React from "react";
 export const About = () => {
   return (
     <div className="hero min-h-screen bg-base-200">
-      <div className="hero-content flex-col lg:flex-row">
+      <div className="hero-content flex-col text-justfiy lg:flex-row">
         <img
           src={imgOne}
           alt="Profile"
           className="w-96 h-96 object-cover rounded-lg shadow-2xl"
         />
         <div className="ml-4">
-          <h1 className="lg:text-7xl sm:text-6xl font-bold">
+          <h1 className="lg:text-7xl text-center lg:text-start text-4xl font-bold">
             A Fresh Web Developer Produced in 082
           </h1>
           <p className="py-6">
@@ -22,7 +22,7 @@ export const About = () => {
           </p>
           <div className="flex space-x-4 items-center">
             <button className="btn btn-primary pr-4">View Resume</button>
-            <a href="#" className="p-2 rounded hover:bg-blue-500">
+            <a href="#" className="p-2 rounded hover:bg-blue-500 justify-end">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

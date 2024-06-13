@@ -5,15 +5,15 @@ export const Profile = () => {
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row-reverse">
+        <div className="hero-content flex-col text-justfiy lg:flex-row">
           <img
             src={imgOne}
             alt="Profile"
             className="w-96 h-96 object-cover rounded-lg shadow-2xl"
           />
           <div className="mr-4">
-            <h1 className="lg:text-7xl sm:text-6xl font-bold">
-              Hi my name is Zo
+            <h1 className="lg:text-7xl text-center lg:text-start text-4xl font-bold">
+              A Fresh Web Developer Produced in 082
             </h1>
             <p className="py-6">
               Hi you can call me Zo, im a Front and Back End Developer from
