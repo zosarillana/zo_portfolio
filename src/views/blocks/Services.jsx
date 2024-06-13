@@ -10,7 +10,7 @@ export const Services = () => {
             <h1 className="lg:text-7xl text-center text-3xl font-bold">
               Services That I Offer
             </h1>
-            <div className="flex flex-wrap pt-5">
+            <div className="flex flex-wrap pt-2">
               <div className="w-full md:w-1/3 p-5">
                 <h1 className="lg:text-4xl pt-2 text-center text-1xl font-bold flex items-center justify-center">
                   Front End{" "}
