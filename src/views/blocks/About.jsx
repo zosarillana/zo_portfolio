@@ -15,10 +15,11 @@ export const About = () => {
             A Fresh Web Developer Produced in 082
           </h1>
           <p className="py-6 text-justify">
-            Hi you can call me Zo, im a Front and Back End Developer from Davao
-            City. I enjoy being creative and making websites/applications that
-            suits your taste while using latest technologies and clean design
-            patterns.
+            Hi, you can call me Zo. I'm a Front and Back End Developer from
+            Davao City. I take pleasure in unleashing creativity and crafting
+            websites and applications that align perfectly with your
+            preferences, leveraging the latest technologies and implementing
+            clean design patterns.
           </p>
           <div className="flex space-x-4 items-center">
             <button className="btn btn-primary pr-4">View Resume</button>

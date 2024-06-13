@@ -33,15 +33,16 @@ export const Services = () => {
                   </svg>
                 </h1>
                 <p className="pt-2 text-justify">
-                  Hi you can call me Zo, im a Front and Back End Developer from
-                  Davao City. I enjoy being creative and making
-                  websites/applications that suits your taste while using latest
-                  technologies and clean design patterns. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Nunc posuere enim id odio
-                  gravida aliquet. Donec vel lobortis sem, at dictum velit. Duis
-                  efficitur accumsan ex et eleifend. In in imperdiet velit. Duis
-                  faucibus sed arcu eu aliquam. Donec vel libero id eros dapibus
-                  pretium.
+                  I specialize in delivering clean, creative, and responsive
+                  designs using the latest tools and modern technologies. My
+                  goal is to create a unique and modern website that perfectly
+                  reflects your style and meets your specific requirements. By
+                  focusing on user experience and employing cutting-edge design
+                  principles, I ensure your website is not only visually
+                  appealing but also highly functional across all devices. Let's
+                  collaborate to transform your vision into a digital reality
+                  that enhances your online presence and achieves your business
+                  goals.
                 </p>
               </div>
               <div className="w-full md:w-1/3 p-5">
@@ -53,22 +54,23 @@ export const Services = () => {
                     fill="currentColor"
                     className="w-12 h-12 ml-4">
                     <path
-                      fill-rule="evenodd"
+                      fillRule="evenodd"
                       d="M14.447 3.026a.75.75 0 0 1 .527.921l-4.5 16.5a.75.75 0 0 1-1.448-.394l4.5-16.5a.75.75 0 0 1 .921-.527ZM16.72 6.22a.75.75 0 0 1 1.06 0l5.25 5.25a.75.75 0 0 1 0 1.06l-5.25 5.25a.75.75 0 1 1-1.06-1.06L21.44 12l-4.72-4.72a.75.75 0 0 1 0-1.06Zm-9.44 0a.75.75 0 0 1 0 1.06L2.56 12l4.72 4.72a.75.75 0 0 1-1.06 1.06L.97 12.53a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 0 1 1.06 0Z"
-                      clip-rule="evenodd"
+                      clipRule="evenodd"
                     />
                   </svg>
                 </h1>
                 <p className="pt-2 text-justify">
-                  Hi you can call me Zo, im a Front and Back End Developer from
-                  Davao City. I enjoy being creative and making
-                  websites/applications that suits your taste while using latest
-                  technologies and clean design patterns. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Nunc posuere enim id odio
-                  gravida aliquet. Donec vel lobortis sem, at dictum velit. Duis
-                  efficitur accumsan ex et eleifend. In in imperdiet velit. Duis
-                  faucibus sed arcu eu aliquam. Donec vel libero id eros dapibus
-                  pretium.
+                  I specialize in backend development, where I focus on data
+                  handling, API integration, and custom functionalities based on
+                  client needs. Using tools and leveraging modern frameworks
+                  like Laravel, I ensure smooth and efficient website and
+                  application performance. My goal is to create backend
+                  solutions that enhance functionality and user experience,
+                  delivering reliable and scalable results. Let's collaborate to
+                  bring your project to life with robust backend development
+                  that meets your specific requirements and exceeds
+                  expectations.
                 </p>
               </div>
               <div className="w-full md:w-1/3 p-5">
@@ -90,15 +92,14 @@ export const Services = () => {
                   </svg>
                 </h1>
                 <p className="pt-2 text-justify">
-                  Hi you can call me Zo, im a Front and Back End Developer from
-                  Davao City. I enjoy being creative and making
-                  websites/applications that suits your taste while using latest
-                  technologies and clean design patterns. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Nunc posuere enim id odio
-                  gravida aliquet. Donec vel lobortis sem, at dictum velit. Duis
-                  efficitur accumsan ex et eleifend. In in imperdiet velit. Duis
-                  faucibus sed arcu eu aliquam. Donec vel libero id eros dapibus
-                  pretium.
+                  In addition to my backend development expertise, I also
+                  specialize in using Photoshop and other tools to enhance
+                  webpages with creative flair and unique images. This allows me
+                  to create visually compelling designs that align perfectly
+                  with your project's style and goals. I offer editing services
+                  to refine designs and create distinctive visuals, ensuring
+                  every element meets your specific requirements. Whether it's
+                  enhancing images, creating custom graphics, or editing videos.
                 </p>
               </div>
             </div>
