@@ -33,6 +33,8 @@ export const About = () => {
 
             <a
               href="https://www.facebook.com/zjakesarillana"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded hover:bg-blue-500 justify-end">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +45,8 @@ export const About = () => {
             </a>
             <a
               href="https://www.instagram.com/zo.jake999/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded hover:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +57,8 @@ export const About = () => {
             </a>
             <a
               href="https://github.com/zosarillana"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded hover:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -10,6 +10,3 @@
   z-index: 1000; /* Ensure this z-index is higher than the parallax component */
 }
 
-.app-content {
-  padding-top: 80px; /* Adjust this value to match your header height */
-}

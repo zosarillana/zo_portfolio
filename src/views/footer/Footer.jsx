@@ -22,6 +22,8 @@ const Footer = () => {
           <div className="grid  pl-24 pt-2 grid-flow-col gap-4">
             <a
               href="https://www.facebook.com/zjakesarillana"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded hover:bg-blue-500 justify-end">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +34,8 @@ const Footer = () => {
             </a>
             <a
               href="https://www.instagram.com/zo.jake999/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded hover:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +46,8 @@ const Footer = () => {
             </a>
             <a
               href="https://github.com/zosarillana"
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 rounded hover:bg-blue-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
