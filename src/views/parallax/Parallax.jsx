@@ -2,7 +2,6 @@ import React from "react";
 import Works from "../blocks/Works";
 import About from "../blocks/About";
 import Footer from "../footer/Footer";
-import Profile from "../profile/Profile";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax"; // Import Parallax components
 import Langg from "../blocks/Langg";
 import Services from "../blocks/Services";
@@ -15,16 +14,13 @@ const ParallaxComponent = ({
   boxLogo,
 }) => {
   return (
-    <Parallax
-      pages={8.55}
-      style={{ top: "0", left: "0" }}
-      className="animation">
+    <Parallax pages={8} style={{ top: "0", left: "0" }} className="animation">
       <ParallaxLayer offset={0.015} speed={0.29}>
         <div className="animation_layer parallax" id="overall">
           <img
             src={overallImg}
             alt="Overall Layer"
-            className="w-full max-h-screen h-auto"
+            className="w-full h-auto max-w-full"
           />
         </div>
       </ParallaxLayer>
@@ -33,7 +29,7 @@ const ParallaxComponent = ({
           <img
             src={bottomImg}
             alt="Bottom Layer"
-            className="w-full max-h-screen h-auto"
+            className="w-full h-auto max-w-full"
           />
         </div>
       </ParallaxLayer>
@@ -42,13 +38,17 @@ const ParallaxComponent = ({
           <img
             src={middleImg}
             alt="Middle Layer"
-            className="w-full max-h-screen h-auto"
+            className="w-full h-auto max-w-full"
           />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={0.015} speed={0.01} style={{ zIndex: 10 }}>
+      <ParallaxLayer offset={0.01} speed={0.01} style={{ zIndex: 10 }}>
         <div className="animation_layer parallax" id="logo">
-          <img src={boxLogo} alt="Logo Layer" className="m-auto max-h-screen" />
+          <img
+            src={boxLogo}
+            alt="Logo Layer"
+            className="w-full h-auto max-w-full"
+          />
         </div>
       </ParallaxLayer>
       <ParallaxLayer offset={0.015} speed={0.45}>
@@ -56,33 +56,33 @@ const ParallaxComponent = ({
           <img
             src={topImg}
             alt="Top Layer"
-            className="w-full max-h-screen h-auto"
+            className="w-full h-auto max-w-full"
           />
         </div>
       </ParallaxLayer>
       {/* Text Block Layers */}
-      <ParallaxLayer offset={0.85} speed={0.5}>
+      <ParallaxLayer offset={1} speed={0.5}>
         <div>
-          <About />
+          <About className="w-full h-auto max-w-full" />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={1.95} speed={0.35}>
+      <ParallaxLayer offset={2} speed={0.35}>
         <div>
-          <Langg />
+          <Langg className="w-full h-auto max-w-full" />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={2.95} speed={0.25}>
+      <ParallaxLayer offset={3} speed={0.25}>
         <div>
-          <Services />
+          <Services className="w-full h-auto max-w-full" />
         </div>
       </ParallaxLayer>
-      <ParallaxLayer offset={4.55} speed={0.15}>
+      <ParallaxLayer offset={4.9} speed={0.15}>
         <div>
-          <Works />
+          <Works className="w-full h-auto max-w-full" />
         </div>
       </ParallaxLayer>
       {/* Footer Layer */}
-      <ParallaxLayer offset={7.9} speed={0.5}>
+      <ParallaxLayer offset={7.5} speed={0.5}>
         <Footer />
       </ParallaxLayer>
     </Parallax>

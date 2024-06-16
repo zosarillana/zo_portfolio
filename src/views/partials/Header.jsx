@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ThemeSwitcher from "./theme/themeSwitch";
 
 const Navbar = () => {
@@ -10,19 +11,25 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 w-full z-10">
+    <div className="navbar-wrapper">
       <div className="navbar bg-primary text-primary-content shadow-lg">
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl text-white" onClick={scrollToTop}>
+          <Link
+            to="/"
+            className="btn btn-ghost text-xl text-white"
+            onClick={scrollToTop}>
             zo.ren
-          </a>
+          </Link>
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1 font-semibold text-white mr-6">
             <li>
-              <a className="hover:bg-secondary" onClick={scrollToTop}>
+              <Link
+                to="/contact"
+                className="hover:bg-secondary"
+                onClick={scrollToTop}>
                 Contact Me
-              </a>
+              </Link>
             </li>
           </ul>
           <div className="dropdown dropdown-end">

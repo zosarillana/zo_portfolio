@@ -47,7 +47,7 @@ const MyWorksComponent = () => {
                   <figure>
                     <img
                       src={timiOne}
-                      className="w-full h-72 object-cover"
+                      className="lg:w-full lg:h-72 md:w-full md:h-72 object-cover w-0 h-0"
                       alt="Movie"
                     />
                   </figure>
@@ -77,7 +77,7 @@ const MyWorksComponent = () => {
                   <figure>
                     <img
                       src={sdocsOne}
-                      className="w-full h-72 object-cover"
+                      className="lg:w-full lg:h-72 md:w-full md:h-72 object-cover w-0 h-0"
                       alt="Movie"
                     />
                   </figure>
@@ -107,7 +107,7 @@ const MyWorksComponent = () => {
                   <figure>
                     <img
                       src={pconnectOne}
-                      className="w-full h-72 object-cover"
+                      className="lg:w-full lg:h-72 md:w-full md:h-72 object-cover w-0 h-0"
                       alt="Movie"
                     />
                   </figure>
@@ -135,7 +135,7 @@ const MyWorksComponent = () => {
                   <figure>
                     <img
                       src={campOne}
-                      className="w-full h-72 object-cover"
+                      className="lg:w-full lg:h-72 md:w-full md:h-72 object-cover w-0 h-0"
                       alt="Movie"
                     />
                   </figure>
@@ -164,7 +164,7 @@ const MyWorksComponent = () => {
                   <figure>
                     <img
                       src={djfesOne}
-                      className="w-full h-72 object-cover"
+                      className="lg:w-full lg:h-72 md:w-full md:h-72 object-cover w-0 h-0"
                       alt="Movie"
                     />
                   </figure>
@@ -191,7 +191,7 @@ const MyWorksComponent = () => {
                   <figure>
                     <img
                       src={ptestOne}
-                      className="w-full h-72 object-cover"
+                      className="lg:w-full lg:h-72 md:w-full md:h-72 object-cover w-0 h-0"
                       alt="Movie"
                     />
                   </figure>
