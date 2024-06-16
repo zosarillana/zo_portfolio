@@ -1,49 +1,59 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [alertMessage, setAlertMessage] = useState(null);
+  const [alertType, setAlertType] = useState(null);
 
   const toggleCollapse = () => {
     setIsOpen(!isOpen);
   };
-  const handleSendEmail = async () => {
-    try {
-      const response = await fetch("http://localhost:5173/api/sendEmail", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: name,
-          email: email,
-          message: message,
-        }),
-      });
 
-      if (!response.ok) {
-        throw new Error("Failed to send email");
-      }
-
-      const data = await response.json();
-      console.log("Email sent:", data.message);
-
-      // Clear form fields after sending email (you can modify this based on your actual logic)
-      setName("");
-      setEmail("");
-      setMessage("");
-    } catch (error) {
-      console.error("Error sending email:", error);
-      // Handle error gracefully, e.g., show a message to the user
+  const handleSendEmail = () => {
+    if (name && email && message) {
+      emailjs
+        .send(
+          "service_ve7j53f", // Replace with your EmailJS service ID
+          "template_ogj1cmr", // Replace with your EmailJS template ID
+          { name, email, message },
+          "4ciYWIJxJEuHjY9HP" // Replace with your EmailJS Public API Key
+        )
+        .then((response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setAlertType("success");
+          setAlertMessage("Successfully sent email.");
+          setTimeout(() => {
+            setAlertMessage(null);
+            setAlertType(null);
+          }, 3000);
+        })
+        .catch((err) => {
+          console.error("FAILED...", err);
+          setAlertType("error");
+          setAlertMessage("Something went wrong.");
+          setTimeout(() => {
+            setAlertMessage(null);
+            setAlertType(null);
+          }, 3000);
+        });
+    } else {
+      setAlertType("error");
+      setAlertMessage("Please fill in all fields.");
+      setTimeout(() => {
+        setAlertMessage(null);
+        setAlertType(null);
+      }, 3000);
     }
   };
 
   return (
     <div className="min-h-screen bg-base-200 flex items-center justify-center">
       <div className="w-full max-w-4xl p-6 bg-base-300 shadow-lg">
-        <h1 className="text-5xl font-bold">Contact me</h1>{" "}
+        <h1 className="text-5xl font-bold">Contact me</h1>
         <div className="flex space-x-4 mt-5 items-center">
           <a
             target="_blank"
@@ -146,6 +156,38 @@ const Contact = () => {
             </div>
           )}
         </div>
+
+        {/* Alert messages */}
+        {alertMessage && (
+          <div
+            role="alert"
+            className={`alert mt-5 ${
+              alertType === "success" ? "alert-success" : "alert-error"
+            }`}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="stroke-current shrink-0 h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24">
+              {alertType === "success" ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              )}
+            </svg>
+            <span>{alertMessage}</span>
+          </div>
+        )}
       </div>
     </div>
   );
