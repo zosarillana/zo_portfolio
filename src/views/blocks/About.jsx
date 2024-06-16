@@ -1,4 +1,5 @@
 import imgOne from "../../assets/image_2.jpg";
+import Resume from "../../assets/CV_Sarillana.pdf";
 import React from "react";
 
 export const About = () => {
@@ -22,7 +23,14 @@ export const About = () => {
             clean design patterns.
           </p>
           <div className="flex space-x-4 items-center">
-            <button className="btn btn-primary pr-4">View Resume</button>
+            <a
+              className="btn btn-primary pr-4"
+              href={Resume}
+              target="_blank"
+              rel="noopener noreferrer">
+              View Resume
+            </a>
+
             <a
               href="https://www.facebook.com/zjakesarillana"
               className="p-2 rounded hover:bg-blue-500 justify-end">
